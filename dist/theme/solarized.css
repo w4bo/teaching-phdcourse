@@ -117,7 +117,27 @@ html * {
  *********************************************/
 .reveal p {
   margin: var(--r-block-margin) 0;
-  line-height: 1.3;
+  line-height: 1;
+  text-align: left;
+}
+
+.footnote {
+  font-size: 20px;
+}
+
+img[alt$=">"] {
+  float: right;
+}
+
+img[alt$="<"] {
+  float: left;
+}
+
+img[alt$="><"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
 }
 
 /* Remove trailing margins after titles */
@@ -141,6 +161,7 @@ html * {
 .reveal strong,
 .reveal b {
   font-weight: bold;
+  color: orange;
 }
 
 .reveal em {
@@ -150,7 +171,7 @@ html * {
 .reveal ol,
 .reveal dl,
 .reveal ul {
-  display: inline-block;
+  display: block;
   text-align: left;
   margin: 0 0 0 1em;
 }
